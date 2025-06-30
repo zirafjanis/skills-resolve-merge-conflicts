@@ -14,24 +14,29 @@ _Learn why conflicts happen and how to resolve them._
 </header>
 
 <!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
+  <<< Author notes: Step 3 >>>
+  Start this step by acknowledging the previous step.
+  Define terms and link to docs.github.com.
 -->
 
-## Step 1: Create a pull request
+## Step 3: Create your own conflict
 
-_Welcome to "Managing Merge Conflicts"! :wave:_
+_Good job! You've solved a merge conflict! :tada:_
 
-**What is a _merge conflict_?**: A **merge conflict** occurs when changes are made to the same part of the same file on two different branches. You usually find out about conflicts in a pull request so let's start by creating one.
+Resolving a conflict doesn't automatically merge the pull request in GitHub. Instead, it stores the resolution of the conflict in a merge commit and allows you and your team to keep working. To resolve a conflict, GitHub performs what is known as a _reverse merge_. This means that the changes from the `main` branch were merged into your `my-resume` branch. With a reverse merge, only the `my-resume` branch is updated. This allows you to test the resolved changes on your branch before you merge it into `main`.
 
-### :keyboard: Activity: Create a pull request
+Now, let's get a little evil. (It's for educational purposes!)
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. We made a small change to a file in the repository in the `my-resume` branch.
-1. [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) setting `my-resume` as the head branch and `main` as the base branch. You can enter `Resolving merge conflicts` for the pull request title and body.
+### :keyboard: Activity: Create your own conflict
+
+We went ahead and added a new file called `references.md` and pushed that change to `main`, without updating your `my-resume` branch.
+
+1. Browse to the `my-resume` branch.
+1. Click the `Add file` dropdown menu and then on `Create new file`.
+1. Create a file named `references.md`.
+1. Enter some text that conflicts with what we added for `references.md` in the `main` branch.
+1. Scroll to the bottom of the page and enter a commit message for your change.
+1. Click the **Commit new file** button, making sure the "Commit directly to the `my-resume` branch" option is selected.
 1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
 
 <footer>
